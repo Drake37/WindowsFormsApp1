@@ -90,5 +90,10 @@ namespace WindowsFormsApp1
                 undo();
             }
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Program.menu.Show();
+        }
     }
 }
