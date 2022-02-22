@@ -11,12 +11,14 @@ namespace WindowsFormsApp1
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
+        public static menu menu;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            menu = new menu();
+            Application.Run(menu);
         }
     }
 }

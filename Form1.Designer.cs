@@ -120,9 +120,12 @@
             this.Controls.Add(this.btPlusOne);
             this.Controls.Add(this.btNewGame);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(400, 300);
+            this.MinimumSize = new System.Drawing.Size(400, 300);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Удвоитель";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
