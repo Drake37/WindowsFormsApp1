@@ -1,4 +1,5 @@
-﻿namespace WindowsFormsApp1
+﻿
+namespace WindowsFormsApp1
 {
     partial class Form1
     {
@@ -53,9 +54,11 @@
             this.btPlusOne.Name = "btPlusOne";
             this.btPlusOne.Size = new System.Drawing.Size(100, 40);
             this.btPlusOne.TabIndex = 1;
+            this.btPlusOne.Tag = "calc";
             this.btPlusOne.Text = "+1";
             this.btPlusOne.UseVisualStyleBackColor = true;
             this.btPlusOne.Click += new System.EventHandler(this.btPlusOne_Click);
+
             // 
             // btMultiTwo
             // 
@@ -63,9 +66,11 @@
             this.btMultiTwo.Name = "btMultiTwo";
             this.btMultiTwo.Size = new System.Drawing.Size(100, 40);
             this.btMultiTwo.TabIndex = 2;
+            this.btMultiTwo.Tag = "calc";
             this.btMultiTwo.Text = "*2";
             this.btMultiTwo.UseVisualStyleBackColor = true;
             this.btMultiTwo.Click += new System.EventHandler(this.btMultiTwo_Click);
+
             // 
             // btUndo
             // 
@@ -127,7 +132,7 @@
             this.Text = "Удвоитель";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.ResumeLayout(false);
-            this.PerformLayout();
+            this.PerformLayout();             
 
         }
 
@@ -140,6 +145,7 @@
         private System.Windows.Forms.Label lbCompNum;
         private System.Windows.Forms.Label lbUserNum;
         private System.Windows.Forms.Label lbSteps;
+
     }
 }
 
